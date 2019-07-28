@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_f8f8f8"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="95dp"
+        android:src="@mipmap/no_network" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="@string/nonet"
+        android:textColor="@color/gray_999999" />
+
+    <TextView
+        android:id="@+id/xiaolajiao_tv_no_network"
+        android:layout_width="96dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/base_bgselector"
+        android:gravity="center"
+        android:text="@string/fresh"
+        android:textColor="@color/brown_d1aa71"
+        android:textSize="16dp" />
+
+</LinearLayout>

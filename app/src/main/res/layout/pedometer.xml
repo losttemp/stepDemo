@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_fff"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_text_white" />
+
+    <com.example.administrator.view.WeekTextView
+        android:id="@+id/xiaolajiao_week_text"
+        android:layout_width="match_parent"
+        android:layout_height="28dp" />
+
+    <TextView
+        android:id="@+id/xiaolajiao_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="@string/time"
+        android:textColor="@color/title_333333"
+        android:textSize="14dp"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_gravity="center"
+        android:background="@mipmap/pedometer_ring_bg">
+
+        <ImageView
+            android:layout_width="165dp"
+            android:layout_height="165dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/pedometer_ring" />
+
+        <com.example.administrator.view.CircleProgressView
+            android:id="@+id/xiaolajiao_CircleProgressView"
+            android:layout_width="165dp"
+            android:layout_height="165dp"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <com.example.administrator.view.ThreeTextView
+            android:id="@+id/xiaolajiao_3tv_left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#d9d9d9" />
+
+        <com.example.administrator.view.ThreeTextView
+            android:id="@+id/xiaolajiao_3tv_reight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:src="@mipmap/base_bg_pressed" />
+
+    <TextView
+        android:id="@+id/xiaolajiao_more_motion"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:text="@string/more_motion"
+        android:textColor="@color/title_333333"
+        android:textSize="16dp"></TextView>
+
+</LinearLayout>

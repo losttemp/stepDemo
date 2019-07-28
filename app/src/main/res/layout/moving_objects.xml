@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/head"
+        layout="@layout/head_text_true" />
+
+    <RelativeLayout
+        android:id="@+id/moving_objects"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_below="@id/head"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@mipmap/moving_objects_ring">
+
+        <TextView
+            android:id="@+id/xiaolajiao_moving_objects"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/brown_d1aa71"
+            android:textSize="53dp" />
+
+        <TextView
+            android:id="@+id/xiaolajiao_moving_objects_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/xiaolajiao_moving_objects"
+            android:layout_centerHorizontal="true"
+            android:text="@string/everyDay"
+            android:textColor="@color/brown_d1aa71"
+            android:textSize="16dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/xiaolajiao_moving_objects_step"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/xiaolajiao_moving_objects"
+            android:layout_centerHorizontal="true"
+            android:text="@string/step"
+            android:textColor="@color/brown_d1aa71"
+            android:textSize="26dp" />
+    </RelativeLayout>
+
+    <SeekBar
+        android:id="@+id/xiaolajiao_moving_progress"
+        style="@android:style/Widget.SeekBar"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/moving_objects"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:maxHeight="30dp"
+        android:minHeight="30dp"
+        android:progressDrawable="@drawable/seekbar_progress_bg"
+        android:splitTrack="false"
+        android:thumb="@mipmap/seekbar_thumb" />
+
+    <TextView
+        android:id="@+id/xiaolajiao_moving_progress_tv_consume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/xiaolajiao_moving_progress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/brown_d1aa71"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="265dp"
+        android:layout_height="38dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:gravity="center"
+        android:text="@string/motion_description"
+        android:textColor="@color/gray_999999"
+        android:textSize="14dp" />
+
+</RelativeLayout>

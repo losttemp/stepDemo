@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_text" />
+
+    <include
+        android:id="@+id/xiaolajiao_noNetwork"
+        layout="@layout/no_network" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/xiaolajiao_hasNetwork"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/xiaolajiao_personal_info_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/xiaolajiao_personal_info_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/xiaolajiao_personal_info_sex"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/xiaolajiao_personal_info_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/xiaolajiao_personal_info_sex"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <WebView
+                android:id="@+id/xiaolajiao_personal_info_wv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/xiaolajiao_ll_waiting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_f8f8f8"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminateDrawable="@drawable/rotate_animation" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

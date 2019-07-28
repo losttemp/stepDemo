@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:background="@mipmap/base_bg_normal"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:background="#00000000" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/xiaolajiao_head_tv_concal"
+            android:layout_width="48dp"
+            android:layout_height="26dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/base_bgselector"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/brown_d1aa71"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/xiaolajiao_head_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/my_title"
+            android:textColor="@color/brown_d1aa71"
+            android:textSize="16dp" />
+
+
+        <TextView
+            android:id="@+id/xiaolajiao_head_tv_text"
+            android:layout_width="48dp"
+            android:layout_height="26dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/base_bgselector"
+            android:gravity="center"
+            android:text="@string/send"
+            android:textColor="@color/brown_d1aa71"
+            android:textSize="14dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name" tools:ignore="ExtraTranslation">健康快测</string>
+    <string name="action_setting">Settings</string>
+    <string name="none_record">不记录本次测量</string>
+    <string name="new_record">新建档案</string>
+    <string name="pr_min">RR最小值</string>
+    <string name="pr_max">RR最大值</string>
+    <string name="all_name">姓名</string>
+    <string name="check_user">切换用户</string>
+    <string name="mesurt_ing">测量中</string>
+    <string name="incoming_message">为了更准确的评估测量结果，请输入你的相关信息</string>
+    <string name="incoming_name">请输入姓名</string>
+    <string name="incoming_born">请选择出生年月</string>
+    <string name="cancel">取消</string>
+    <string name="makesure">确定</string>
+    <string name="connect">连接</string>
+    <string name="consult_doctor">咨询医生</string>
+    <string name="shareother">分享他人</string>
+    <string name="share_text">分享</string>
+    <string name="mesurt_keep">测量开始，请不要移开您的手指。注意：测量中请保持安静，不要说话，保持情绪稳定</string>
+    <string name="start_mesurt">开始测量</string>
+    <string name="none_recort">暂无体检报告</string>
+    <string name="common_diseases">常见疾病</string>
+    <string name="respiratoory_rate_low">呼吸率偏低</string>
+    <string name="respiratoory_rate_high">呼吸率偏高</string>
+    <string name="respiratoory_rate_middle">呼吸率正常</string>
+    <string name="test">测试</string>
+    <string name="my_title">我是标题</string>
+    <string name="my_return">返回</string>
+    <string name="send">发送</string>
+    <string name="hrv">心率变异性</string>
+    <string name="half">0%</string>
+    <string name="restart">重新测量</string>
+    <string name="choose">选择用户</string>
+    <string name="choosemesurt">选择测量对象</string>
+    <string name="nonetwork_choose">网络异常,只能进行体验测量</string>
+    <string name="historrecord">历史记录</string>
+    <string name="myselfe">(自己)</string>
+    <string name="other">其他人</string>
+    <string name="checknet">网络连接失败,请检查网络设置</string>
+    <!-- 字体大小 popup -->
+    <string name="font_model">字号</string>
+    <string name="font_size">字体大小</string>
+    <string name="standard">标准</string>
+    <string name="less">较小</string>
+    <string name="more">较大</string>
+    <string name="min">最小</string>
+    <string name="max">最大</string>
+    <string name="zer">000</string>
+    <!-- 常用符号 -->
+    <string name="per_cent">%</string>
+    <string name="degree">℃</string>
+    <string name="respiratory_rate_unit">次/每分钟</string>
+    <string name="questionMark">\?</string>
+    <string name="equalsSign">=</string>
+    <string name="and">&amp;</string>
+    <string name="en">\n</string>
+    <string name="zzzzzx_age">岁</string>
+    <!-- 流程 -->
+    <string name="fast_mesurt">快速测量中</string>
+
+    <!-- 计步 -->
+    <string name="step">步</string>
+    <string name="refresh">点击刷新</string>
+    <string name="no_network">无法连接到网络</string>
+    <string name="movingobjects">计步器</string>
+    <string name="install">设置</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="IdentityHeigtText">165</string>
+    <string name="IdentityWeigtText">60</string>
+    <string name="IdentityYearText">1960年</string>
+    <string name="IdentityMonthText">1月</string>
+    <string name="spot">.</string>
+    <string name="cm">cm</string>
+    <string name="kg">kg</string>
+    <string name="energy">消耗能量:</string>
+    <string name="calorie">卡路里</string>
+    <string name="step_num">步数</string>
+    <string name="target">目标</string>
+    <string name="age">岁</string>
+    <string name="everyDay">每日</string>
+    <string name="distance">距离</string>
+    <string name="kilometre">公里</string>
+    <string name="quantityHeat">热量</string>
+    <string name="kilocalorie">千卡</string>
+    <string name="circle1">绕故宫</string>
+    <string name="circle2">圈</string>
+    <string name="rice">碗米饭</string>
+    <string name="zero">0</string>
+    <!-- 星期 -->
+    <string name="week_monday">一</string>
+    <string name="week_tuesday">二</string>
+    <string name="week_wednesday">三</string>
+    <string name="week_thursday">四</string>
+    <string name="week_friday">五</string>
+    <string name="week_saturday">六</string>
+    <string name="week_sunday">日</string>
+    <string name="monday">星期一</string>
+    <string name="tuesday"> 星期二</string>
+    <string name="wednesday">星期三</string>
+    <string name="thursday">星期四</string>
+    <string name="friday">星期五</string>
+    <string name="saturday">星期六</string>
+    <string name="sunday">星期日</string>
+
+    <!-- 个人信息pop -->
+    <string name="user_height">身高(cm)</string>
+    <string name="user_weight">体重(kg)</string>
+    <string name="user_cancal">取消</string>
+    <string name="user_confirm">确定</string>
+    <string name="quick_mes">体验测量</string>
+
+    <!-- 个人信息 -->
+    <string name="personal_info_cancal">取消</string>
+    <string name="personal_info">个人信息</string>
+    <string name="personal_info_next_step">下一步</string>
+    <string name="personal_info_birth_year">出生年月</string>
+    <string name="personal_info_height">身高</string>
+    <string name="personal_info_weight">体重</string>
+    <string name="personal_info_choice_man">男</string>
+    <string name="personal_info_choice_woman">女</string>
+    <string name="personal_info_movement_tendency">运动趋势</string>
+    <string name="personal_info_describe">请输入以下信息，我们会为你制定合理的运动目标</string>
+    <string name="personal_info_enter_name">请输入姓名</string>
+    <!-- 计步 -->
+    <string name="finish">完成</string>
+    <string name="daytarget">每日运动目标</string>
+    <string name="recommend_step">智能推荐步数</string>
+    <string name="more_motion">查看更多运动趋势</string>
+    <string name="motion_description">运动量的计算是根据Roda和Sizga修正的Harris_Benedict公式推算的</string>
+
+    <!-- 建立档案 -->
+    <string name="new_archives">为了更准确的评估测量结果,请输入您的相关信息</string>
+    <string name="enter_name">请输入姓名</string>
+    <string name="choice_birthdate">请选择出生年月</string>
+    <string name="history">查看历史记录</string>
+    <string name="knowlege">了解体温知识</string>
+    <string name="sharetodo">分享给他人</string>
+    <string name="delete">删除</string>
+    <string name="result">测量结果</string>
+    <string name="alcohol_text">对准酒精检测器吹气，时间3&#8211;5秒，并保持不动</string>
+
+    <!-- dialog常用 -->
+    <string name="not_preservation">不保存</string>
+    <string name="login">前往登录</string>
+    <string name="preservation_dialog_title">是否保存数据？</string>
+    <string name="preservation_dialog_message">登陆后，测量数据才能保存到您和家人的档案里。</string>
+    <string name="concal_dialog_title">确定要删除本次测量数据吗？</string>
+    <string name="concal_dialog_message">删除之后就不能恢复了哦</string>
+    <string name="quick_dialog_title">现在不能联网,是否进行体验测量?</string>
+    <string name="quick_dialog_message">因为无法获取健康档案,只能进行体验测量。您在体验测量时的健康档案,无法保存到健康档案。</string>
+    <!-- 酒精检测 -->
+    <string name="mg">mg/100ml</string>
+    <string name="s">S</string>
+    <string name="Blowing">请准备哈气</string>
+    <string name="toBlowing">距离1厘米左右缓慢哈气</string>
+    <string name="startBlowing">轻缓哈气</string>
+    <string name="inMeasure">计算中,请稍候</string>
+    <string name="alcohol_normal">正常</string>
+    <string name="drink_wine">酒后驾车</string>
+    <string name="drunk">醉酒驾车</string>
+    <string name="alcohol_content">健康饮酒</string>
+    <string name="title_start">“开始测量”后将预热20秒左右，连续测量建议间隔2分钟，酒精浓度过高时延长间隔时间</string>
+    <string name="title_wait">请对准手机下端橘红色酒杯口不间断轻缓哈气3到5秒,哈气时保持口腔清洁不要将唾液和食物残渣哈入进气口以免造成堵塞</string>
+    <string name="title_countdown">预热中</string>
+    <string name="tv_coundown">长期没有使用或吹入较高酒精度后,需要2-10分钟或更长校验时间,等待期间可以体验红鸟手机其它功能,谢谢！</string>
+    <string name="prompt">仅供娱乐,酒后请勿驾车,祝各位健康生活,平安出行。</string>
+
+    <string-array name="alcohol_level">
+        <item>无酒精</item>
+        <item>轻度饮酒</item>
+        <item>饮酒</item>
+        <item>醉酒</item>
+    </string-array>
+    <!-- 环境测量 -->
+    <string name="environment">将紫外线传感器朝向被测光源</string>
+    <string name="light_count">紫外线指数</string>
+    <string name="humidity_title">湿度计</string>
+    <string name="pressure_refresh">刷新</string>
+    <string name="light_max">强</string>
+    <string name="light_middle">较强</string>
+    <string name="light_min">正常</string>
+    <string name="light_maxtext_ten">紫外很强、有害、尽量不外出，必须外出时，要采取一定的防护措施哦</string>
+    <string name="light_mintext">紫外线正常，可以放心外出了</string>
+    <string name="light_middletext">紫外线有些强，外出要戴防护帽或太阳镜哦</string>
+    <string name="light_maxtext_five">紫外线很强，一定要做好防护哦</string>
+    <string name="light_maxtext_seven">紫外线太强了，尽量减少出行，外出时尽可能在遮荫处</string>
+    <string name="pressure">气压</string>
+    <string name="altitude">海拔</string>
+    <string name="pressure_company">hpa</string>
+    <string name="altitude_company">m</string>
+    <string name="cold">偏冷</string>
+    <string name="comfortable">舒适</string>
+    <string name="hot">偏热</string>
+    <string name="damp">潮湿</string>
+    <string name="dry">干燥</string>
+    <string name="pressure_detail">海拔是根据标准气象条件下的气压推算得出,因为气压会经常变化,海拔值有一定误差,仅供参考。</string>
+
+    <!-- appName -->
+
+
+    <!-- 一键体检 -->
+    <!-- 标题头 -->
+    <string name="title_heartRate">心率</string>
+    <string name="title_bloodOxygen">测血氧</string>
+    <string name="title_bloodPressure">测血压</string>
+    <string name="title_temperature">测体温</string>
+    <string name="title_respiratoryRate">呼吸率</string>
+    <string name="title_cardiogram">测心电</string>
+    <string name="physical_examination_welcome">欢迎进入快速体检</string>
+    <string name="physical_examination_service">我们将为您提供体温,血压,心电呼吸率,心率血氧各项身体指标检测,体检完成后,系统将根据体检者的基本信息,及体检结果,提供体检报告!</string>
+    <string name="rapid_physical_examination">快速体检</string>
+    <string name="rapid_physical_examination_presentation">历次体检报告</string>
+    <string name="rapid_physical_heartrate">血氧</string>
+    <string name="rapid_physical_electrocardiogram">心电心率呼吸率</string>
+    <string name="rapid_physical_temperature">测体温</string>
+    <string name="rapid_physical_blood_pressure">医用血压计</string>
+    <string name="rapid_physical_heart_rate_oxygen">心率血氧</string>
+    <string name="rapid_physical_start_measurement">开始测量</string>
+    <string name="rapid_physical_skip_measurement">跳过此项检测</string>
+    <string name="boot_wizard_skip">跳过</string>
+    <string name="label_physical_examination">一键体检</string>
+    <string name="boot_wizard_examination">快速体检</string>
+
+    <!-- 快速体检的 体检报告 -->
+    <string name="medical_examination_report">体检报告</string>
+    <string name="medical_examination_user">请选择被测量人</string>
+    <string name="medical_examination_choose_user">切换用户</string>
+    <string name="medical_examination_result">本次体检结果,心率正常,血压正常</string>
+    <string name="medical_examination_health_data">健康数据</string>
+    <string name="medical_examination_date">2017年3月22日10:00</string>
+    <string name="rapid_medical_examination">快速体检</string>
+    <string name="medical_examination_rate">血氧</string>
+    <string name="medical_examination_electrocardiogram">心电心率呼吸率</string>
+    <string name="medical_examination_temperature">测体温</string>
+    <string name="medical_examination_blood_pressure">医用血压计</string>
+    <string name="rapid_heartrate">测血氧</string>
+    <string name="health_heart_rate">心率</string>
+    <string name="health_blood_oxygen">血氧</string>
+    <string name="health_electdiogram">心电图</string>
+    <string name="health_respiratory_rate">呼吸率</string>
+    <string name="health_temperature">体温</string>
+    <string name="health_blood_pressure">血压</string>
+    <string name="health_alcohol">酒精</string>
+    <string name="measure_posture">测量中,请保持姿势稳定</string>
+
+    <!-- 呼吸率 -->
+    <string name="respiratory_rate_knowledge">了解呼吸率知识</string>
+    <string name="label_respiratory_rate">呼吸率</string>
+    <string name="brlow">您的呼吸率低于国际正常标准，建议平时多锻炼身体，更多了解请咨询医生</string>
+    <string name="brnomall">您的呼吸率处于国际正常标准，感谢您的使用，祝您身体健康</string>
+    <string name="brhrhigh">您的呼吸率高于国际正常标准，请再次测量，测量时请保持安静，更多了解请咨询医生</string>
+    <!-- 心率 -->
+    <string name="heart_rate_knowledge">了解心率知识</string>
+    <string name="heart_rate">心率</string>
+    <string name="label_heart_rate">测心率</string>
+    <string name="label_blood_pressure">医用血压计</string>
+    <string name="measure_result">测量结果</string>
+    <string name="heart_rate_low">心率偏低</string>
+    <string name="heart_rate_high">心率偏高</string>
+    <string name="heart_rate_middle">心率正常</string>
+    <string name="hrlow">您的心率值低于国际正常标准，请再次测量，测量时请保持安静，放松心情，更多了解请咨询医生</string>
+    <string name="hrnomall">您的心率值处于国际正常标准，感谢您的使用，祝您身体健康</string>
+    <string name="hrhigh">您的心率值高于国际正常标准，请再次测量，测量请时保持安静，放松心情，更多了解请咨询医生</string>
+
+    <!-- 血压 -->
+    <string name="blood_pressure_knowledge">了解血压知识</string>
+    <string name="blood_pressure">医用血压计</string>
+    <string name="high_blood_pressure">收缩压</string>
+    <string name="low_blood_pressure">舒张压</string>
+    <string name="toConnect">点击连接</string>
+    <string name="connecting">连接中</string>
+    <string name="hasConnect">切换蓝牙</string>
+    <string name="list">设备列表</string>
+    <string name="bpIn">请坐正，使臂带与心脏处于同一高度。手掌不要用力、不要握拳，自然张开。保持安静，请勿移动身体或手臂</string>
+    <string name="bplow">您的血压值低于国际正常标准，请复测，如结果依旧偏低，建议尽快就医</string>
+    <string name="bpnomall">您的血压值处于国际正常标准，祝您身体健康</string>
+    <string name="bphigh">您的血压值高于国际正常标准，请复测，如结果依旧偏高，建议立即就医</string>
+    <!-- 快速测血压 -->
+    <string name="quick_pressure_title_one">日常血压、心率测量平均值(选填)</string>
+    <string name="quick_pressure_title_two">日常血压、心率测量平均值(选填)</string>
+    <string name="quick_heartrate_title_two">日均心率平均值(选填)</string>
+    <!-- 登录 -->
+    <string name="loginfail">登录失败</string>
+
+    <!-- 了解知识 -->
+    <string name="knowlege_heartRate">了解心率知识</string>
+    <string name="knowlege_bloodOxygen">了解血氧知识</string>
+    <string name="knowlege_bloodPressure">了解血压知识</string>
+    <string name="knowlege_temperature">了解体温知识</string>
+    <string name="knowlege_respiratoryRate">了解呼吸率知识</string>
+    <string name="knowlege_cardiogram">了解心电知识</string>
+    <string name="knowlege_konw">了解相关知识</string>
+    <string name="knowlege_alcohol">了解酒精测试知识</string>
+    <string name="knowlege_environment">了解紫外线相关知识</string>
+    <string name="zzzzz_xiaolajjiao_knowlege_humidity">了解湿度知识</string>
+    <string name="knowlege_pressure">了解气压和海拔知识</string>
+    <!-- 按功能区分的各界面文案 -->
+    <!-- 一键体检 -->
+    <string-array name="fastTesting">
+        <item>请将手机横握，两手食指分别摁压在触片A和触片B上，测量开始后保持20-30秒不动!</item>
+        <item>测量开始！请不要移开您的手指。注意：测量中请保持安静，不要说话，保持情绪稳定</item>
+        <item>测量结束！谢谢！</item>
+    </string-array>
+    <!-- 酒精检测 -->
+    <string-array name="alcoholTestingString">
+        <item>您好,首次点击“开始测量”按钮后,传感器将预热10秒,请对准手机下端橘红色酒杯口缓慢不间断吹气3到5秒</item>
+        <item>传感器预热中，请不要哈气</item>
+        <item>请开始吹气</item>
+        <item>测量结束！谢谢！</item>
+    </string-array>
+    <!-- 血压 -->
+    <string-array name="bloodPressureString">
+        <item>请打开血压计外设开关,确保蓝牙连接成功</item>
+        <item>将袖套戴在胳膊上,捆绑臂带时,臂带不可过松或者过紧,也不要留有缝隙</item>
+        <item>点击开始后,袖套开始充气,测量过程历时约30秒,测量过程中请坐正，使臂带与心脏处于同一高度。手掌不要用力、不要握拳，自然张开</item>
+        <item>请坐正，使臂带与心脏处于同一高度。手掌不要用力、不要握拳，自然张开。保持安静，请勿移动身体或手臂</item>
+        <item>测量开始！</item>
+        <item>测量结束！谢谢！</item>
+    </string-array>
+    <string-array name="respiratoryRateString">
+        <item>请将手机横握，左手手指放置在触片A上，右手手指放置在触片B上，测量开始后保持20-30秒不动</item>
+        <item>更多注意事项，请查看相关知识</item>
+    </string-array>
+    <string-array name="cardiogramString">
+        <item>请将手机横握，左手手指放置在触片A上，右手手指放置在触片B上，测量开始后保持20-30秒不动</item>
+        <item>更多注意事项，请查看相关知识</item>
+    </string-array>
+    <string-array name="bloodOxygenString">
+        <item>请将食指指腹轻搭在血氧传感器上，不要用力按压，测量开始后保持10秒不动</item>
+        <item>更多注意事项，请查看相关知识</item>
+    </string-array>
+
+    <!-- 血压测量前 -->
+    <string-array name="quickBloodPressureString">
+        <item>为了能完成测量，请先选择测量人并完善信息；准备好测量姿势后按下“开始测量”按钮</item>
+        <item>请将手机横握，左手手指放置在触片A上，右手手指放置在触片B上，测量开始后保持20-30秒不动</item>
+        <item>如果不了解个人日常血压值，请用医用血压计测量后完善</item>
+        <item>测量开始，请不要移开您的手指。注意：测量中请保持安静坐姿，不要说话，保持情绪稳定</item>
+    </string-array>
+    <string-array name="heartRateString">
+        <item>请将手机横握，两手食指分别摁压在触片A和触片B上，测量开始后保持20-30秒不动</item>
+        <item>更多注意事项，请查看相关知识</item>
+    </string-array>
+    <string-array name="alcoholString">
+        <item>您滴酒未沾哦！</item>
+        <item>老友坐在一起了，喝一杯是必须的呀！</item>
+        <item>小酌怡情，差不多就行喽！</item>
+        <item>只要心里有，茶水也当酒！</item>
+        <item>酒过三巡微醺的感觉美美哒，不能再喝喽！</item>
+        <item>您要小口喝喽，只要感情在，喝啥都是酒！</item>
+        <item>酒中藏富贵，只要不开车，黄金屋中坐，继续！</item>
+        <item>老板，刷脸目测您已经喝美了，可以放缓一点喝酒的节奏啦！</item>
+        <item>万水千山总是情，咱们少喝一杯行不行！</item>
+        <item>您已经是大英雄了，不用再靠喝酒壮胆喽！</item>
+        <item>真不好意自己说出来，我真喝不动了！</item>
+        <item>革命小酒天天醉嘛，您现在真喝到位了，明天再战吧！</item>
+        <item>都喝下这么多酒啦，太牛了，不能再喝啦！让朋友陪你回去吧！</item>
+        <item>喝得太多了~头晕啦~站不稳啦~墙那</item>
+    </string-array>
+
+    <string name="nonet">无法连接到网络</string>
+    <string name="fresh">点击刷新</string>
+    <!-- 血氧 -->
+    <string name="appbloodox">测血氧</string>
+    <string name="bloodoxygennomal">血氧正常</string>
+    <string name="bloodoxygenlow">血氧偏低</string>
+    <string name="bloodoxy">血氧：</string>
+    <string name="bloodresnomal">您的血氧值处于国际正常标准，感谢您的使用，祝您身体健康</string>
+    <string name="bloodlow">您的血氧值低于国际正常标准，请再次测量，测量时请保持安静，放松心情，更多了解请咨询医生</string>
+    <!-- 血压 -->
+    <string name="bloodpreflat">血压过低</string>
+    <string name="bloodpreideal">理想血压</string>
+    <string name="bloodprenomalheigh">正常高压</string>
+    <string name="bloodpreoneheight">1级高血压</string>
+    <string name="bloodpretowheight">2级高血压</string>
+    <string name="bloodpresthreeheight">3级高血压</string>
+    <string name="bloodprehight">血压高压：</string>
+    <string name="bloodprelow">血压低压：</string>
+    <!-- 体温 -->
+    <string name="appthmp">体温计</string>
+    <string name="temp">体温：</string>
+    <string name="resulttime">测量时间：</string>
+
+    <string-array name="temp">
+        <item>点击开始按钮后，将手机背面体温计对准额头眉心1厘米以内，倒计时结束后，测量会自动开始</item>
+        <item>更多注意事项，请查看相关知识</item>
+    </string-array>
+    <string name="outlength">姓名超过6个字符，请重新输入</string>
+    <string name="keepdown">点击开始按钮后，将手机背面体温计对准额头眉心1厘米以内，倒计时结束后，测量会自动开始</string>
+    <string name="carddown">请将体温计对准额头</string>
+    <string name="nomal">正常</string>
+    <string name="tempfail">测量数据异常</string>
+    <string name="tempagin">重新测量</string>
+    <string name="tempadvise1">请按照指示图正确操作；</string>
+    <string name="tempadvise2">请在规定时间内完成操作；</string>
+    <string name="tempadvise3">请调整测量姿势，重新测量！</string>
+    <string name="tempadvise">可能未按照指示图正确操作,可能未在规定时间内完成操作,可能测量值超出测量范围,建议重新测量,祝您健康愉快!</string>
+    <string name="tempunnomal_low">体温偏低</string>
+    <string name="tempunnomal_middle">体温正常</string>
+    <string name="tempnomal">您的体温处于国际正常标准，感谢您的使用，祝您身体健康</string>
+    <string name="templow">您的体温低于国际正常标准，请再次测量，测量中请保持姿势正确，更多了解请咨询医生</string>
+    <string name="tempflat">您的体温处于低热范围，建议多喝水，注意休息，更多了解请咨询医生</string>
+    <string name="templowfever">您的体温处于中热范围，请再次测量，如检测结果持续偏高，建议尽早咨询医生</string>
+    <string name="hightfever">您的体温处于高热范围，请再次测量，如检测结果持续偏高，请尽快咨询医生</string>
+    <string name="morehight">您的体温处于超高热范围，请再次测量，如检测结果持续偏高，建议立即就医</string>
+    <string name="lowfever">低烧</string>
+    <string name="middle">中烧</string>
+    <string name="heightfever">高烧</string>
+    <string name="tempprotext">测量开始</string>
+    <!-- 心电 -->
+    <string name="cardiogram_mesurt">RR值代表：相连的两个R波波峰的时间间隙，大于5个格为心动过缓，小于3个格为心动过速。如需了解专业分析，建议点击“咨询医生“或“了解心电知识”</string>
+    <!-- icon -->
+    <string name="name_alcohol">健康饮酒</string>
+    <string name="name_humidity">湿度计</string>
+    <string name="ultraviolet_rays">紫外线</string>
+    <string name="pressure_title">气压海拔</string>
+    <string name="simpress_title">测血压</string>
+    <!-- 心电 -->
+    <string name="appcardiogram">测心电</string>
+    <string name="mood">心情</string>
+    <!--  zhuyanglin 20160320 modify/add/delete begin -->
+    <!-- 测试相关内容 -->
+    <string name="test_tips">点击次数：1、血氧  2、体温  3、计步</string>
+    <string name="test_test">测量</string>
+    <string name="test_error">error</string>
+    <string name="test_common">common</string>
+    <!--  zhuyanglin 20160320 modify/add/delete end -->
+    <!--    modify/add/delete begin -->
+    <string name="name">李荣浩</string>
+    <string name="_A">A</string>
+    <string name="_3">3</string>
+    <string name="breath">呼吸率</string>
+    <string name="time">16:00</string>
+    <string name="_77">77</string>
+    <string name="_20">20</string>
+    <string name="_10">6</string>
+    <string name="_48">48</string>
+    <string name="respiratory_rate">60</string>
+    <string name="high_blood_pressure_value">120</string>
+    <string name="low_blood_pressure_value">60</string>
+    <string name="blood_pressure_unit">mmHg</string>
+    <string name="_2126">0</string>
+    <string name="_298">298</string>
+    <string name="sex">女</string>
+    <!--    modify/add/delete end -->
+
+    <string name="send_img">发送图片</string>
+
+    <string-array name="send_img_item">
+        <item>发送图片的二进制数据</item>
+        <item>发送图片的本地路径</item>
+        <item>发送图片的URL</item>
+    </string-array>
+
+    <string name="send_img_file_not_exist">文件不存在</string>
+    <string name="send_pic">发送照片</string>
+    <string name="send_music">发送音乐</string>
+
+    <string-array name="send_music_item">
+        <item>发送音乐url</item>
+        <item>发送低带宽音乐url</item>
+    </string-array>
+
+    <string name="send_video">发送视频</string>
+
+    <string-array name="send_video_item">
+        <item>发送视频url</item>
+        <item>发送低带宽视频url</item>
+    </string-array>
+
+    <string name="send_webpage">发送网页</string>
+
+    <string-array name="send_webpage_item">
+        <item>发送网页url</item>
+    </string-array>
+
+    <string name="send_appdata">发送app消息</string>
+
+    <string-array name="send_appdata_item">
+        <item>发送app文件本地路径</item>
+        <item>发送app二进制数据</item>
+        <item>发送无附件的app</item>
+    </string-array>
+
+    <string name="send_emoji">发送表情消息</string>
+
+    <string-array name="send_emoji_item">
+        <item>发送表情本地路径</item>
+        <item>发送表情二进制数据</item>
+    </string-array>
+    <string-array name="send_emoji_item_format">
+        <item>发送GIF图片</item>
+        <item>发送非GIF图片</item>
+    </string-array>
+
+    <string name="gdmap">高德地图</string>
+    <string name="jrtt_news">今日头条</string>
+    <string name="email">电子邮件</string>
+    <string name="share">"分享到"</string>
+    <string name="health_share">健康测量类分享</string>
+    <string name="health_change">记录您生命的每一次体征的变化，关爱您生命的每一个历程</string>
+
+</resources>
