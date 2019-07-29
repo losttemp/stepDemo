@@ -71,17 +71,17 @@ public class MovingobjectsActivity<T> extends Activity implements
     private void initViewFirst() {
         findViewById(R.id.activity_chooseuser_finish).setVisibility(
                 View.INVISIBLE);
-        TextView mTitle = (TextView) findViewById(R.id.xiaolajiao_head_tv_title);
+        TextView mTitle = (TextView) findViewById(R.id.head_tv_title);
         mTitle.setText(getResources().getString(
                 R.string.daytarget));
     }
 
     private void initView() {
         Button mFinish = (Button) findViewById(R.id.activity_chooseuser_finish);
-        TextView title = (TextView) findViewById(R.id.xiaolajiao_head_tv_title);
+        TextView title = (TextView) findViewById(R.id.head_tv_title);
         title.setText(getResources().getString(
                 R.string.install));
-        findViewById(R.id.xiaolajiao_moving_objects_tv).setVisibility(
+        findViewById(R.id.moving_objects_tv).setVisibility(
                 View.VISIBLE);
         mFinish.setOnClickListener(this);
     }
@@ -104,9 +104,9 @@ public class MovingobjectsActivity<T> extends Activity implements
 
     private void initData() {
         Button mEnsure = (Button) findViewById(R.id.activity_chooseuser_ensure);
-        mProgressConsume = (TextView) findViewById(R.id.xiaolajiao_moving_progress_tv_consume);
-        mMovingObjects = (TextView) findViewById(R.id.xiaolajiao_moving_objects);
-        mMovingSeek = (SeekBar) findViewById(R.id.xiaolajiao_moving_progress);
+        mProgressConsume = (TextView) findViewById(R.id.moving_progress_tv_consume);
+        mMovingObjects = (TextView) findViewById(R.id.moving_objects);
+        mMovingSeek = (SeekBar) findViewById(R.id.moving_progress);
         mEnsure.setText(getResources().getString(
                 R.string.finish));
         mEnsure.setOnClickListener(this);

@@ -58,17 +58,17 @@ public class MovementTendencyActivity extends Activity
     private void initView() {
         findViewById(R.id.historical_record_send).setVisibility(View.GONE);
 
-        mNoNetwork = (LinearLayout) findViewById(R.id.xiaolajiao_noNetwork);
-        mHasNetwork = (LinearLayout) findViewById(R.id.xiaolajiao_hasNetwork);
+        mNoNetwork = (LinearLayout) findViewById(R.id.noNetwork);
+        mHasNetwork = (LinearLayout) findViewById(R.id.hasNetwork);
 
         back = (Button) findViewById(R.id.historical_record_back);
-        mTitle = (TextView) findViewById(R.id.xiaolajiao_head_tv_title);
+        mTitle = (TextView) findViewById(R.id.head_tv_title);
         mShare = (Button) findViewById(R.id.historical_record_send);
-        mSex = (TextView) findViewById(R.id.xiaolajiao_personal_info_sex);
-        mName = (TextView) findViewById(R.id.xiaolajiao_personal_info_name);
-        mAge = (TextView) findViewById(R.id.xiaolajiao_personal_info_age);
-        wv = (WebView) findViewById(R.id.xiaolajiao_personal_info_wv);
-        mWaiting = (LinearLayout) findViewById(R.id.xiaolajiao_ll_waiting);
+        mSex = (TextView) findViewById(R.id.personal_info_sex);
+        mName = (TextView) findViewById(R.id.personal_info_name);
+        mAge = (TextView) findViewById(R.id.personal_info_age);
+        wv = (WebView) findViewById(R.id.personal_info_wv);
+        mWaiting = (LinearLayout) findViewById(R.id.l_waiting);
     }
 
     private void initData() {
@@ -93,9 +93,9 @@ public class MovementTendencyActivity extends Activity
             muserbean = new UserBean();
         }
         String uid = LoginUtils.getUser(this).get(
-                Constants.XIAOLAJIAO_UID_STR);
+                Constants.UID_STR);
         String token = LoginUtils.getUser(this).get(
-                Constants.XIAOLAJIAO_TOKEN_STR);
+                Constants.TOKEN_STR);
         if (null != uid && null != token && !TextUtils.isEmpty(uid)) {
             muserbean = new UserBean();
             muserbean.setUid(uid);
@@ -119,7 +119,7 @@ public class MovementTendencyActivity extends Activity
                             mWebUrl = WebUtils
                                     .createHistoryWebUrl(
                                             muserbean,
-                                            Constants.XIAOLAJIAO_TEST_TYPE_STEP,
+                                            Constants.TEST_TYPE_STEP,
                                             false);
                             load(wv);
                         }
@@ -139,7 +139,7 @@ public class MovementTendencyActivity extends Activity
             mNoNetwork.setVisibility(View.VISIBLE);
             mHasNetwork.setVisibility(View.GONE);
             mShare.setVisibility(View.INVISIBLE);
-            findViewById(R.id.xiaolajiao_tv_no_network)
+            findViewById(R.id.tv_no_network)
                     .setOnClickListener(this);
         }
     }
@@ -198,12 +198,12 @@ public class MovementTendencyActivity extends Activity
         case R.id.historical_record_back:
             MovementTendencyActivity.this.finish();
             break;
-        case R.id.xiaolajiao_tv_no_network:
+        case R.id.tv_no_network:
             hideOrShow();
             break;
         case R.id.historical_record_send:
             // TimeAndShareUtils.shareMsg(this,
-            // getShareUri(Constants.XIAOLAJIAO_TEST_TYPE_STEP));
+            // getShareUri(Constants.TEST_TYPE_STEP));
 
             break;
         default:
@@ -241,7 +241,7 @@ public class MovementTendencyActivity extends Activity
                     LoginUtils
                             .getUser(
                                     MovementTendencyActivity.this)
-                            .get(Constants.XIAOLAJIAO_UID_STR));
+                            .get(Constants.UID_STR));
             StepsUserDataBean userDataBean = new Gson().fromJson(
                     response, StepsUserDataBean.class);
             if (userDataBean != null && userDataBean.getStatus() == 10000) {

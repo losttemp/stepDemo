@@ -28,7 +28,7 @@ import com.example.administrator.bean.ChackUserBean;
 public class LoginUtils {
     private final static String URL = "http://sensor.hong-niao.com/login/?s=api/check";
     private final static String APP_KEY = "f58efa91746c07d122493225801aa4bf";
-    private final static String LOGIN_URL = "content://com.xiaolajiao.loginmanager.provider/info";
+    private final static String LOGIN_URL = "content://com.loginmanager.provider/info";
     private final static String V = "1.0";
     private final static int CHECK_SUCCESS = 10000;
     private final static int CHECK_SIGNERROR = 30001;
@@ -48,9 +48,9 @@ public class LoginUtils {
                     String token = cursor.getString(4);
                     if (!TextUtils.isEmpty(uid) && !TextUtils.isEmpty(token)) {
                         mUserMap.clear();
-                        mUserMap.put(Constants.XIAOLAJIAO_UID_STR,
+                        mUserMap.put(Constants.UID_STR,
                                 uid);
-                        mUserMap.put(Constants.XIAOLAJIAO_TOKEN_STR,
+                        mUserMap.put(Constants.TOKEN_STR,
                                 token);
                     }
                 }
@@ -78,7 +78,7 @@ public class LoginUtils {
         PackageInfo pi;
         try {
             pi = context.getPackageManager().getPackageInfo(
-                    "com.xiaolajiao.loginmanager", 0);
+                    "com.loginmanager", 0);
         } catch (PackageManager.NameNotFoundException e) {
             e.printStackTrace();
             return;
@@ -94,7 +94,7 @@ public class LoginUtils {
             Intent intent = new Intent(Intent.ACTION_MAIN);
             intent.putExtra("type", "0");
             intent.addCategory(Intent.CATEGORY_LAUNCHER);
-            ComponentName cn = new ComponentName("com.xiaolajiao.loginmanager",
+            ComponentName cn = new ComponentName("com.loginmanager",
                     className);
             intent.setComponent(cn);
             context.startActivityForResult(intent,

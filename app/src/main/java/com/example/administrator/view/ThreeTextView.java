@@ -10,10 +10,10 @@ import com.example.administrator.stepdemo.R;
 
 public class ThreeTextView extends RelativeLayout {
 
-    private TextView xiaolajiao_pedometer_tv_num;
-    private TextView xiaolajiao_pedometer_tv_distances;
-    private TextView xiaolajiao_pedometer_tv_kilometre;
-    private TextView xiaolajiao_pedometer_tv_appoint;
+    private TextView pedometer_tv_num;
+    private TextView pedometer_tv_distances;
+    private TextView pedometer_tv_kilometre;
+    private TextView pedometer_tv_appoint;
 
     public ThreeTextView(Context context) {
         super(context);
@@ -28,22 +28,22 @@ public class ThreeTextView extends RelativeLayout {
     }
 
     private void initView() {
-        xiaolajiao_pedometer_tv_num = (TextView) findViewById(R.id.xiaolajiao_pedometer_tv_num);
-        xiaolajiao_pedometer_tv_distances = (TextView) findViewById(R.id.xiaolajiao_pedometer_tv_distances);
-        xiaolajiao_pedometer_tv_kilometre = (TextView) findViewById(R.id.xiaolajiao_pedometer_tv_kilometre);
-        xiaolajiao_pedometer_tv_appoint = (TextView) findViewById(R.id.xiaolajiao_pedometer_tv_appoint);
+        pedometer_tv_num = (TextView) findViewById(R.id.pedometer_tv_num);
+        pedometer_tv_distances = (TextView) findViewById(R.id.pedometer_tv_distances);
+        pedometer_tv_kilometre = (TextView) findViewById(R.id.pedometer_tv_kilometre);
+        pedometer_tv_appoint = (TextView) findViewById(R.id.pedometer_tv_appoint);
     }
 
     public void setTv_Num(String text) {
-        xiaolajiao_pedometer_tv_num.setText(text);
+        pedometer_tv_num.setText(text);
     }
 
     public void setLeftAndRight(String text1, String text2) {
-        xiaolajiao_pedometer_tv_distances.setText(text1);
-        xiaolajiao_pedometer_tv_kilometre.setText(text2);
+        pedometer_tv_distances.setText(text1);
+        pedometer_tv_kilometre.setText(text2);
     }
 
     public void setTv_BottomText(String text) {
-        xiaolajiao_pedometer_tv_appoint.setText(text);
+        pedometer_tv_appoint.setText(text);
     }
 }

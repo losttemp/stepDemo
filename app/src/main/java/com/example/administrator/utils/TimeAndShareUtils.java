@@ -30,7 +30,7 @@ public class TimeAndShareUtils {
 
     public static String getCreateTime() {
         SimpleDateFormat format = new SimpleDateFormat(
-                Constants.XIAOLAJIAO_DATE_FORMATE);
+                Constants.DATE_FORMATE);
         String str = format.format(new Date());
         return str;
     }

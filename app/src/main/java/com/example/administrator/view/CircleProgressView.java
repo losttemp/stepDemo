@@ -84,7 +84,6 @@ public class CircleProgressView extends View {
         mPaint.setTextSize(textHeight);
         int textWidth;
         if (!TextUtils.isEmpty(progressText)) {
-            // "/XiaoLaJiaoHealth/assets/font/spiral.ttf"
 //            mPaint.setTypeface(Typeface.createFromAsset(mContext.getAssets(),
 //                    "font/spiral.ttf"));
             textWidth = (int) mPaint.measureText(progressText, 0,

@@ -8,12 +8,12 @@
     <include layout="@layout/head_text_white" />
 
     <com.example.administrator.view.WeekTextView
-        android:id="@+id/xiaolajiao_week_text"
+        android:id="@+id/week_text"
         android:layout_width="match_parent"
         android:layout_height="28dp" />
 
     <TextView
-        android:id="@+id/xiaolajiao_time"
+        android:id="@+id/time"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -37,7 +37,7 @@
             android:src="@mipmap/pedometer_ring" />
 
         <com.example.administrator.view.CircleProgressView
-            android:id="@+id/xiaolajiao_CircleProgressView"
+            android:id="@+id/CircleProgressView"
             android:layout_width="165dp"
             android:layout_height="165dp"
             android:layout_centerInParent="true" />
@@ -50,7 +50,7 @@
         android:orientation="horizontal">
 
         <com.example.administrator.view.ThreeTextView
-            android:id="@+id/xiaolajiao_3tv_left"
+            android:id="@+id/tv_left"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
@@ -61,7 +61,7 @@
             android:background="#d9d9d9" />
 
         <com.example.administrator.view.ThreeTextView
-            android:id="@+id/xiaolajiao_3tv_reight"
+            android:id="@+id/tv_reight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
@@ -75,7 +75,7 @@
         android:src="@mipmap/base_bg_pressed" />
 
     <TextView
-        android:id="@+id/xiaolajiao_more_motion"
+        android:id="@+id/more_motion"
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:gravity="center"

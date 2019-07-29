@@ -21,15 +21,15 @@ public class WeekTextView extends LinearLayout implements
 
     private View inflate;
     private List<TextView> list;
-    private OnWeekClickListener XiaoLaJiaoWeekOnclickListener;
-    private String[] week = { "一", "二", "三", "四", "五", "六", "日" };
+    private OnWeekClickListener weekOnclickListener;
+    private String[] week = {"一", "二", "三", "四", "五", "六", "日"};
     private Context context;
     // private int today;
     private int[] successArray;
 
-    public synchronized void setXiaoLaJiaoWeekOnclickListener(
-            OnWeekClickListener xiaoLaJiaoWeekOnclickListener) {
-        XiaoLaJiaoWeekOnclickListener = xiaoLaJiaoWeekOnclickListener;
+    public synchronized void setWeekOnclickListener(
+            OnWeekClickListener onWeekClickListener) {
+        weekOnclickListener = onWeekClickListener;
     }
 
     protected WeekTextView(Context context) {
@@ -47,31 +47,31 @@ public class WeekTextView extends LinearLayout implements
     }
 
     private void initView(View inflate2) {
-        TextView xiaolajiao_text_week_center = (TextView) inflate2
-                .findViewById(R.id.xiaolajiao_text_week_center);
-        TextView xiaolajiao_text_week_left_one = (TextView) inflate2
-                .findViewById(R.id.xiaolajiao_text_week_left_one);
-        TextView xiaolajiao_text_week_left_two = (TextView) inflate2
-                .findViewById(R.id.xiaolajiao_text_week_left_two);
-        TextView xiaolajiao_text_week_left_three = (TextView) inflate2
-                .findViewById(R.id.xiaolajiao_text_week_left_three);
-        TextView xiaolajiao_text_week_right_one = (TextView) inflate2
-                .findViewById(R.id.xiaolajiao_text_week_right_one);
-        TextView xiaolajiao_text_week_right_two = (TextView) inflate2
-                .findViewById(R.id.xiaolajiao_text_week_right_two);
-        TextView xiaolajiao_text_week_right_three = (TextView) inflate2
-                .findViewById(R.id.xiaolajiao_text_week_right_three);
+        TextView text_week_center = (TextView) inflate2
+                .findViewById(R.id.text_week_center);
+        TextView text_week_left_one = (TextView) inflate2
+                .findViewById(R.id.text_week_left_one);
+        TextView text_week_left_two = (TextView) inflate2
+                .findViewById(R.id.text_week_left_two);
+        TextView text_week_left_three = (TextView) inflate2
+                .findViewById(R.id.text_week_left_three);
+        TextView text_week_right_one = (TextView) inflate2
+                .findViewById(R.id.text_week_right_one);
+        TextView text_week_right_two = (TextView) inflate2
+                .findViewById(R.id.text_week_right_two);
+        TextView text_week_right_three = (TextView) inflate2
+                .findViewById(R.id.text_week_right_three);
         if (list == null) {
             list = new ArrayList<>();
         }
         list.clear();
-        list.add(xiaolajiao_text_week_left_three);
-        list.add(xiaolajiao_text_week_left_two);
-        list.add(xiaolajiao_text_week_left_one);
-        list.add(xiaolajiao_text_week_center);
-        list.add(xiaolajiao_text_week_right_one);
-        list.add(xiaolajiao_text_week_right_two);
-        list.add(xiaolajiao_text_week_right_three);
+        list.add(text_week_left_three);
+        list.add(text_week_left_two);
+        list.add(text_week_left_one);
+        list.add(text_week_center);
+        list.add(text_week_right_one);
+        list.add(text_week_right_two);
+        list.add(text_week_right_three);
     }
 
     private void initData() {
@@ -83,51 +83,51 @@ public class WeekTextView extends LinearLayout implements
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-        case R.id.xiaolajiao_text_week_center:
-            if (XiaoLaJiaoWeekOnclickListener != null) {
-                XiaoLaJiaoWeekOnclickListener.OnWeekClickListener(v, 3);
-            }
-            setTextColor((TextView) v);
-            break;
-        case R.id.xiaolajiao_text_week_left_one:
-            if (XiaoLaJiaoWeekOnclickListener != null) {
-                XiaoLaJiaoWeekOnclickListener.OnWeekClickListener(v, 4);
-            }
-            setTextColor((TextView) v);
-            break;
-        case R.id.xiaolajiao_text_week_left_two:
-            if (XiaoLaJiaoWeekOnclickListener != null) {
-                XiaoLaJiaoWeekOnclickListener.OnWeekClickListener(v, 5);
-            }
-            setTextColor((TextView) v);
-            break;
-        case R.id.xiaolajiao_text_week_left_three:
-            if (XiaoLaJiaoWeekOnclickListener != null) {
-                XiaoLaJiaoWeekOnclickListener.OnWeekClickListener(v, 6);
-            }
-            setTextColor((TextView) v);
-            break;
-        case R.id.xiaolajiao_text_week_right_one:
-            if (XiaoLaJiaoWeekOnclickListener != null) {
-                XiaoLaJiaoWeekOnclickListener.OnWeekClickListener(v, 2);
-            }
-            setTextColor((TextView) v);
-            break;
-        case R.id.xiaolajiao_text_week_right_two:
-            if (XiaoLaJiaoWeekOnclickListener != null) {
-                XiaoLaJiaoWeekOnclickListener.OnWeekClickListener(v, 1);
-            }
-            setTextColor((TextView) v);
-            break;
-        case R.id.xiaolajiao_text_week_right_three:
-            if (XiaoLaJiaoWeekOnclickListener != null) {
-                XiaoLaJiaoWeekOnclickListener.OnWeekClickListener(v, 0);
-            }
-            setTextColor((TextView) v);
-            break;
+            case R.id.text_week_center:
+                if (weekOnclickListener != null) {
+                    weekOnclickListener.OnWeekClickListener(v, 3);
+                }
+                setTextColor((TextView) v);
+                break;
+            case R.id.text_week_left_one:
+                if (weekOnclickListener != null) {
+                    weekOnclickListener.OnWeekClickListener(v, 4);
+                }
+                setTextColor((TextView) v);
+                break;
+            case R.id.text_week_left_two:
+                if (weekOnclickListener != null) {
+                    weekOnclickListener.OnWeekClickListener(v, 5);
+                }
+                setTextColor((TextView) v);
+                break;
+            case R.id.text_week_left_three:
+                if (weekOnclickListener != null) {
+                    weekOnclickListener.OnWeekClickListener(v, 6);
+                }
+                setTextColor((TextView) v);
+                break;
+            case R.id.text_week_right_one:
+                if (weekOnclickListener != null) {
+                    weekOnclickListener.OnWeekClickListener(v, 2);
+                }
+                setTextColor((TextView) v);
+                break;
+            case R.id.text_week_right_two:
+                if (weekOnclickListener != null) {
+                    weekOnclickListener.OnWeekClickListener(v, 1);
+                }
+                setTextColor((TextView) v);
+                break;
+            case R.id.text_week_right_three:
+                if (weekOnclickListener != null) {
+                    weekOnclickListener.OnWeekClickListener(v, 0);
+                }
+                setTextColor((TextView) v);
+                break;
 
-        default:
-            break;
+            default:
+                break;
         }
     }
 

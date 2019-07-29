@@ -16,7 +16,7 @@
         android:layout_weight="1">
 
         <TextView
-            android:id="@+id/xiaolajiao_head_tv_concal"
+            android:id="@+id/head_tv_concal"
             android:layout_width="48dp"
             android:layout_height="26dp"
             android:layout_centerVertical="true"
@@ -28,7 +28,7 @@
             android:textSize="14dp" />
 
         <TextView
-            android:id="@+id/xiaolajiao_head_tv_title"
+            android:id="@+id/head_tv_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
@@ -39,7 +39,7 @@
 
 
         <TextView
-            android:id="@+id/xiaolajiao_head_tv_text"
+            android:id="@+id/head_tv_text"
             android:layout_width="48dp"
             android:layout_height="26dp"
             android:layout_alignParentRight="true"

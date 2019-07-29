@@ -21,7 +21,7 @@
         android:textColor="@color/gray_999999" />
 
     <TextView
-        android:id="@+id/xiaolajiao_tv_no_network"
+        android:id="@+id/tv_no_network"
         android:layout_width="96dp"
         android:layout_height="32dp"
         android:layout_gravity="center_horizontal"

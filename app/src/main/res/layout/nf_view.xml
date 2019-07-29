@@ -13,7 +13,7 @@
         android:src="@mipmap/icon_step" />
 
     <TextView
-        android:id="@+id/xiaolajiao_steps_time"
+        android:id="@+id/steps_time"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_alignParentRight="true"
@@ -31,7 +31,7 @@
         android:orientation="vertical" >
 
         <TextView
-            android:id="@+id/xiaolajiao_steps_title"
+            android:id="@+id/steps_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="top"
@@ -41,7 +41,7 @@
             android:textSize="21dp" />
 
         <TextView
-            android:id="@+id/xiaolajiao_steps_msg"
+            android:id="@+id/steps_msg"
             android:layout_width="230dp"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"

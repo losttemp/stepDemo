@@ -8,7 +8,7 @@
         layout="@layout/head_text_true" />
 
     <RelativeLayout
-        android:id="@+id/moving_objects"
+        android:id="@+id/moving_objects_rl"
         android:layout_width="240dp"
         android:layout_height="240dp"
         android:layout_below="@id/head"
@@ -17,7 +17,7 @@
         android:background="@mipmap/moving_objects_ring">
 
         <TextView
-            android:id="@+id/xiaolajiao_moving_objects"
+            android:id="@+id/moving_objects"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
@@ -25,10 +25,10 @@
             android:textSize="53dp" />
 
         <TextView
-            android:id="@+id/xiaolajiao_moving_objects_tv"
+            android:id="@+id/moving_objects_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@id/xiaolajiao_moving_objects"
+            android:layout_above="@id/moving_objects"
             android:layout_centerHorizontal="true"
             android:text="@string/everyDay"
             android:textColor="@color/brown_d1aa71"
@@ -36,10 +36,10 @@
             android:visibility="invisible" />
 
         <TextView
-            android:id="@+id/xiaolajiao_moving_objects_step"
+            android:id="@+id/moving_objects_step"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/xiaolajiao_moving_objects"
+            android:layout_below="@id/moving_objects"
             android:layout_centerHorizontal="true"
             android:text="@string/step"
             android:textColor="@color/brown_d1aa71"
@@ -47,11 +47,11 @@
     </RelativeLayout>
 
     <SeekBar
-        android:id="@+id/xiaolajiao_moving_progress"
+        android:id="@+id/moving_progress"
         style="@android:style/Widget.SeekBar"
         android:layout_width="300dp"
         android:layout_height="30dp"
-        android:layout_below="@id/moving_objects"
+        android:layout_below="@id/moving_objects_rl"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_marginTop="20dp"
@@ -62,10 +62,10 @@
         android:thumb="@mipmap/seekbar_thumb" />
 
     <TextView
-        android:id="@+id/xiaolajiao_moving_progress_tv_consume"
+        android:id="@+id/moving_progress_tv_consume"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/xiaolajiao_moving_progress"
+        android:layout_below="@id/moving_progress"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:textColor="@color/brown_d1aa71"

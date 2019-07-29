@@ -248,9 +248,9 @@ public class StepService extends Service implements SensorEventListener {
      * 监听时间变化提醒用户锻炼
      */
     private void isCall() {
-        //String time = this.getSharedPreferences(Constants.XIAOLAJIAO_SP_FILE_NAME, Context.MODE_MULTI_PROCESS).getString("achieveTime", "21:00");
-        int plan = this.getSharedPreferences(Constants.XIAOLAJIAO_SP_FILE_NAME, Context.MODE_MULTI_PROCESS).getInt(Constants.SEEK_PROGRESS, 4000);
-        //String remind = this.getSharedPreferences(Constants.XIAOLAJIAO_SP_FILE_NAME, Context.MODE_MULTI_PROCESS).getString("remind", "1");
+        //String time = this.getSharedPreferences(Constants.SP_FILE_NAME, Context.MODE_MULTI_PROCESS).getString("achieveTime", "21:00");
+        int plan = this.getSharedPreferences(Constants.SP_FILE_NAME, Context.MODE_MULTI_PROCESS).getInt(Constants.SEEK_PROGRESS, 4000);
+        //String remind = this.getSharedPreferences(Constants.SP_FILE_NAME, Context.MODE_MULTI_PROCESS).getString("remind", "1");
         Log.d(TAG, "time=" + time + "\n" +
                 "new SimpleDateFormat(\"HH: mm\").format(new Date()))=" + new SimpleDateFormat("HH:mm").format(new Date()));
         if ((CURRENT_STEP < plan) &&
@@ -324,7 +324,7 @@ public class StepService extends Service implements SensorEventListener {
         Intent hangIntent = new Intent(this, PedometerActivity.class);
         PendingIntent hangPendingIntent = PendingIntent.getActivity(this, 0, hangIntent, PendingIntent.FLAG_CANCEL_CURRENT);
 
-        int plan = this.getSharedPreferences(Constants.XIAOLAJIAO_SP_FILE_NAME, Context.MODE_MULTI_PROCESS).getInt(Constants.SEEK_PROGRESS, 4000);
+        int plan = this.getSharedPreferences(Constants.SP_FILE_NAME, Context.MODE_MULTI_PROCESS).getInt(Constants.SEEK_PROGRESS, 4000);
         NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(this);
         mBuilder.setContentTitle("今日步数" + CURRENT_STEP + " 步")
                 .setContentText("距离目标还差" + (plan - CURRENT_STEP) + "步，加油！")

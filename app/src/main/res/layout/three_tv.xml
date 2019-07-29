@@ -4,7 +4,7 @@
     android:layout_height="78dp">
 
     <TextView
-        android:id="@+id/xiaolajiao_pedometer_tv_num"
+        android:id="@+id/pedometer_tv_num"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -12,32 +12,32 @@
         android:textSize="46dp" />
 
     <TextView
-        android:id="@+id/xiaolajiao_pedometer_tv_distances"
+        android:id="@+id/pedometer_tv_distances"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@id/xiaolajiao_pedometer_tv_num"
+        android:layout_alignBottom="@id/pedometer_tv_num"
         android:layout_marginRight="7dp"
-        android:layout_toLeftOf="@id/xiaolajiao_pedometer_tv_num"
+        android:layout_toLeftOf="@id/pedometer_tv_num"
         android:paddingBottom="8dp"
         android:textColor="@color/gray_999999"
         android:textSize="14dp" />
 
     <TextView
-        android:id="@+id/xiaolajiao_pedometer_tv_kilometre"
+        android:id="@+id/pedometer_tv_kilometre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@id/xiaolajiao_pedometer_tv_num"
+        android:layout_alignBottom="@id/pedometer_tv_num"
         android:layout_marginLeft="7dp"
-        android:layout_toRightOf="@id/xiaolajiao_pedometer_tv_num"
+        android:layout_toRightOf="@id/pedometer_tv_num"
         android:paddingBottom="8dp"
         android:textColor="@color/gray_999999"
         android:textSize="14dp" />
 
     <TextView
-        android:id="@+id/xiaolajiao_pedometer_tv_appoint"
+        android:id="@+id/pedometer_tv_appoint"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/xiaolajiao_pedometer_tv_num"
+        android:layout_below="@id/pedometer_tv_num"
         android:layout_centerHorizontal="true"
         android:textColor="@color/gray_999999"
         android:textSize="10dp" />

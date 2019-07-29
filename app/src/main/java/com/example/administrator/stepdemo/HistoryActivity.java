@@ -11,10 +11,12 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.administrator.bean.StepData;
 import com.example.administrator.utils.DbUtils;
+import com.example.administrator.utils.HeadBgUtils;
 
 import java.util.List;
 
@@ -23,26 +25,24 @@ import java.util.List;
  */
 
 public class HistoryActivity extends AppCompatActivity {
-    private LinearLayout layout_titlebar;
     private ImageView iv_left;
     private ListView lv;
 
-    private void assignViews() {
-        layout_titlebar = (LinearLayout) findViewById(R.id.layout_titlebar);
+    private void initView() {
         iv_left = (ImageView) findViewById(R.id.iv_left);
-
         lv = (ListView) findViewById(R.id.lv);
     }
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        HeadBgUtils.headTransparent(this);
         setContentView(R.layout.ac_history);
-        assignViews();
+        initView();
         iv_left.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               finish();
+                finish();
             }
         });
         initData();
@@ -50,18 +50,18 @@ public class HistoryActivity extends AppCompatActivity {
 
     private void initData() {
         setEmptyView(lv);
-        if(DbUtils.getLiteOrm()==null){
+        if (DbUtils.getLiteOrm() == null) {
             DbUtils.createDb(this, "jingzhi");
         }
-        List<StepData> stepDatas =DbUtils.getQueryAll(StepData.class);
-        Log.d("TAG","stepDatas="+stepDatas);
-        lv.setAdapter(new CommonAdapter<StepData>(this,stepDatas,R.layout.item) {
+        List<StepData> stepDatas = DbUtils.getQueryAll(StepData.class);
+        Log.d("TAG", "stepDatas=" + stepDatas);
+        lv.setAdapter(new CommonAdapter<StepData>(this, stepDatas, R.layout.item) {
             @Override
             protected void convertView(View item, StepData stepData) {
-                TextView tv_date= CommonViewHolder.get(item,R.id.tv_date);
-                TextView tv_step= CommonViewHolder.get(item,R.id.tv_step);
+                TextView tv_date = CommonViewHolder.get(item, R.id.tv_date);
+                TextView tv_step = CommonViewHolder.get(item, R.id.tv_step);
                 tv_date.setText(stepData.getToday());
-                tv_step.setText(stepData.getStep()+"步");
+                tv_step.setText(stepData.getStep() + "步");
             }
         });
     }

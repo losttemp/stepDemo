@@ -103,20 +103,20 @@ public class PedometerActivity extends Activity implements
     }
 
     private void initView() {
-        mTitle = (TextView) findViewById(R.id.xiaolajiao_head_tv_title);
-        mConcal = (TextView) findViewById(R.id.xiaolajiao_head_tv_concal);
-        mTv = findViewById(R.id.xiaolajiao_head_tv_text);
-        findViewById(R.id.xiaolajiao_head_tv_text)
+        mTitle = (TextView) findViewById(R.id.head_tv_title);
+        mConcal = (TextView) findViewById(R.id.head_tv_concal);
+        mTv = findViewById(R.id.head_tv_text);
+        findViewById(R.id.head_tv_text)
                 .setVisibility(View.INVISIBLE);
 
-        mMore = (TextView) findViewById(R.id.xiaolajiao_more_motion);
-        mTime = (TextView) findViewById(R.id.xiaolajiao_time);
+        mMore = (TextView) findViewById(R.id.more_motion);
+        mTime = (TextView) findViewById(R.id.time);
 
-        mCircleProgress = (CircleProgressView) findViewById(R.id.xiaolajiao_CircleProgressView);
-        mWeek = (WeekTextView) findViewById(R.id.xiaolajiao_week_text);
+        mCircleProgress = (CircleProgressView) findViewById(R.id.CircleProgressView);
+        mWeek = (WeekTextView) findViewById(R.id.week_text);
 
-        mThreeTVL = (ThreeTextView) findViewById(R.id.xiaolajiao_3tv_left);
-        mThreeTVR = (ThreeTextView) findViewById(R.id.xiaolajiao_3tv_reight);
+        mThreeTVL = (ThreeTextView) findViewById(R.id.tv_left);
+        mThreeTVR = (ThreeTextView) findViewById(R.id.tv_reight);
     }
 
     private void initData() {
@@ -155,7 +155,7 @@ public class PedometerActivity extends Activity implements
         //设置当前步数为0
         mCircleProgress.setmTxtHint1(getResources().getString(
                 R.string.step_num));
-        mWeek.setXiaoLaJiaoWeekOnclickListener(this);
+        mWeek.setWeekOnclickListener(this);
         mMore.setOnClickListener(this);
         mConcal.setOnClickListener(this);
         mTv.setOnClickListener(this);
@@ -346,7 +346,7 @@ public class PedometerActivity extends Activity implements
     }
 
     private void setData(int seekProgress, int progress) {
-        Log.d("TAG","seekProgress="+seekProgress+"=progress="+progress);
+        Log.d("TAG", "seekProgress=" + seekProgress + "=progress=" + progress);
         if (seekProgress > 0) {
             String kilometreStr = CalculationUtils
                     .floatToStr(CalculationUtils
@@ -365,7 +365,7 @@ public class PedometerActivity extends Activity implements
                                     .getEnergy(progress)));
             setThreeTvText(toZeroOrData(kilometreStr), toZeroOrData(energyStr),
                     circleStr, caloriesStr);
-            Log.d("TAG","=1="+circleStr+"=2="+caloriesStr);
+            Log.d("TAG", "=1=" + circleStr + "=2=" + caloriesStr);
             mCircleProgress.setmTxtHint2(getResources().getString(
                     R.string.target)
                     + seekProgress
@@ -410,7 +410,7 @@ public class PedometerActivity extends Activity implements
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.xiaolajiao_more_motion:
+            case R.id.more_motion:
                 if (LoginUtils.isLogin(this)) {
                     Intent tendencyIntent = new Intent(this,
                             MovementTendencyActivity.class);
@@ -419,13 +419,13 @@ public class PedometerActivity extends Activity implements
                     LoginUtils.startLogin(this);
                 }
                 break;
-            case R.id.xiaolajiao_head_tv_concal:
+            case R.id.head_tv_concal:
                 Intent movingIntent = new Intent(this,
                         MovingobjectsActivity.class);
                 movingIntent.putExtra(Constants.STEPS_FIRST, 1);
                 startActivity(movingIntent);
                 break;
-            case R.id.xiaolajiao_head_tv_text:
+            case R.id.head_tv_text:
                 startActivity(new Intent(this, HistoryActivity.class));
                 break;
             default:
@@ -517,9 +517,9 @@ public class PedometerActivity extends Activity implements
                 Constants.STEPS_RECORD_METHOD_VALUE);
         StepRecordBean recordBean = new StepRecordBean(t);
         recordBean.setUid(LoginUtils.getUser(this).get(
-                Constants.XIAOLAJIAO_UID_STR));
+                Constants.UID_STR));
         recordBean.setToken(LoginUtils.getUser(this).get(
-                Constants.XIAOLAJIAO_TOKEN_STR));
+                Constants.TOKEN_STR));
         String sign = "date_time=" + recordBean.getDate_time() + "&token="
                 + recordBean.getToken() + "&uid=" + recordBean.getUid() + "&"
                 + t;
@@ -558,12 +558,12 @@ public class PedometerActivity extends Activity implements
                         addToMap();
                     }
                 }
-                // Xiaolajiao <NullPointException> <lizhi> <20170425> modify
-                // begin
+
+
                 if (list != null && list.size() > 0) {
                     readFile();
                 }
-                // Xiaolajiao <NullPointException> <lizhi> <20170425> modify end
+
             }
         }
 

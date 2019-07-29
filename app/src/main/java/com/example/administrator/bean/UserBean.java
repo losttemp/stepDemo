@@ -19,7 +19,7 @@ public class UserBean implements Serializable {
     // 体检用户id 与UID 不同，用来区分家庭成员
     private int mMemberId;
     // page type: recored:历史记录 share：历史记录分享页
-    private String mPageType = Constants.XIAOLAJIAO_PAGE_TYPE_RECORD;
+    private String mPageType = Constants.PAGE_TYPE_RECORD;
     // 性别 1 男 2 女
     private int mSex = 0;
 

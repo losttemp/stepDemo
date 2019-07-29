@@ -10,11 +10,11 @@ public class WebUtils {
 
     private static String urlString;
     private static String[] urlIdname = {
-            Constants.XIAOLAJIAO_UID_STR,
-            Constants.XIAOLAJIAO_MEMBER_ID_STR,
-            Constants.XIAOLAJIAO_MEMBER_TYPE_STR,
-            Constants.XIAOLAJIAO_TOKEN_STR,
-            Constants.XIAOLAJIAO_PAGE_TYPE_STR };
+            Constants.UID_STR,
+            Constants.MEMBER_ID_STR,
+            Constants.MEMBER_TYPE_STR,
+            Constants.TOKEN_STR,
+            Constants.PAGE_TYPE_STR};
 
     public static String webUrl(Context context, String type, String[] urlData) {
         if (urlData.length < 4) {
@@ -96,47 +96,45 @@ public class WebUtils {
         // 体检类型不同处理
         switch (testType) {
         // 血压
-        case Constants.XIAOLAJIAO_TEST_TYPE_BLOODPRESURE:
-            retVal = Constants.XIAOLAJIAO_BLOODPRESURE_URL;
+        case Constants.TEST_TYPE_BLOODPRESURE:
+            retVal = Constants.BLOODPRESURE_URL;
             break;
         // 血氧
-        case Constants.XIAOLAJIAO_TEST_TYPE_BLOODOXYGEN:
-            retVal = Constants.XIAOLAJIAO_BLOODOXYGEN_URL;
+        case Constants.TEST_TYPE_BLOODOXYGEN:
+            retVal = Constants.BLOODOXYGEN_URL;
             break;
         // 呼吸率
-        case Constants.XIAOLAJIAO_TEST_TYPE_RESPIRAT:
-            retVal = Constants.XIAOLAJIAO_RESPIRAT_URL;
+        case Constants.TEST_TYPE_RESPIRAT:
+            retVal = Constants.RESPIRAT_URL;
             break;
         // 心率
-        case Constants.XIAOLAJIAO_TEST_TYPE_HEARTRATE:
-            retVal = Constants.XIAOLAJIAO_HEARTRATE_URL;
+        case Constants.TEST_TYPE_HEARTRATE:
+            retVal = Constants.HEARTRATE_URL;
             break;
         // 心电
-        case Constants.XIAOLAJIAO_TEST_TYPE_ELECTORCARDIO:
-            retVal = Constants.XIAOLAJIAO_ELECTORCARDIO_URL;
+        case Constants.TEST_TYPE_ELECTORCARDIO:
+            retVal = Constants.ELECTORCARDIO_URL;
             break;
         // 酒精
-        case Constants.XIAOLAJIAO_TEST_TYPE_ALCOHOL:
-            retVal = Constants.XIAOLAJIAO_ALCOHOL_URL;
+        case Constants.TEST_TYPE_ALCOHOL:
+            retVal = Constants.ALCOHOL_URL;
             break;
         // 体温
-        case Constants.XIAOLAJIAO_TEST_TYPE_TEMPERATURE:
-            retVal = Constants.XIAOLAJIAO_TEMPERATURE_URL;
+        case Constants.TEST_TYPE_TEMPERATURE:
+            retVal = Constants.TEMPERATURE_URL;
             break;
         // 计步
-        case Constants.XIAOLAJIAO_TEST_TYPE_STEP:
-            retVal = Constants.XIAOLAJIAO_STEP_URL;
+        case Constants.TEST_TYPE_STEP:
+            retVal = Constants.STEP_URL;
             break;
-        case Constants.XIAOLAJIAO_TEST_TYPE_QUICK:
-            retVal = Constants.XIAOLAJIAO_QUICK_URL;
+        case Constants.TEST_TYPE_QUICK:
+            retVal = Constants.QUICK_URL;
             break;
         default:
             break;
         }
 
         // 体检类型相同数据处理
-        // XiaoLaJiaoHealthApplication app =
-        // XiaoLaJiaoHealthApplication.getApplication(c);
         // 问号
         String questionMark = "?";
         // app.getResources().getString(R.string.questionMark);
@@ -147,23 +145,23 @@ public class WebUtils {
         String and = "&";
         // .getResources().getString(R.string.and);
         // 合并
-        retVal += questionMark + Constants.XIAOLAJIAO_UID_STR
+        retVal += questionMark + Constants.UID_STR
                 + equalsSign + user.getUid() + and
-                + Constants.XIAOLAJIAO_MEMBER_ID_STR + equalsSign
+                + Constants.MEMBER_ID_STR + equalsSign
                 + user.getMemberId() + and
-                + Constants.XIAOLAJIAO_MEMBER_TYPE_STR + equalsSign
+                + Constants.MEMBER_TYPE_STR + equalsSign
                 + user.getMemberType() + and
-                + Constants.XIAOLAJIAO_TOKEN_STR + equalsSign
+                + Constants.TOKEN_STR + equalsSign
                 + user.getToken();
         // 判断是否是分享
         if (isShare) {
-            retVal += and + Constants.XIAOLAJIAO_PAGE_TYPE_STR
+            retVal += and + Constants.PAGE_TYPE_STR
                     + equalsSign
-                    + Constants.XIAOLAJIAO_PAGE_TYPE_SHARE;
+                    + Constants.PAGE_TYPE_SHARE;
         } else {
-            retVal += and + Constants.XIAOLAJIAO_PAGE_TYPE_STR
+            retVal += and + Constants.PAGE_TYPE_STR
                     + equalsSign
-                    + Constants.XIAOLAJIAO_PAGE_TYPE_RECORD;
+                    + Constants.PAGE_TYPE_RECORD;
         }
 
         return retVal;

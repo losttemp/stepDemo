@@ -49,15 +49,15 @@ public class UpLoadUtils {
                 Constants.GET_USER_DETAIL);
         UserDataBean userDataBean = new UserDataBean(
                 LoginUtils.getUser(context).get(
-                        Constants.XIAOLAJIAO_TOKEN_STR),
+                        Constants.TOKEN_STR),
                 LoginUtils.getUser(context).get(
-                        Constants.XIAOLAJIAO_UID_STR));
+                        Constants.UID_STR));
         String sign = "token="
                 + LoginUtils.getUser(context).get(
-                        Constants.XIAOLAJIAO_TOKEN_STR)
+                        Constants.TOKEN_STR)
                 + "&uid="
                 + LoginUtils.getUser(context).get(
-                        Constants.XIAOLAJIAO_UID_STR) + "&" + t;
+                        Constants.UID_STR) + "&" + t;
         Log.e("Health", "initHttp == sign: " + sign);
         paramMap = UpLoadUtils.putParamAndEncrypted(paramMap,
                 userDataBean, sign, t);

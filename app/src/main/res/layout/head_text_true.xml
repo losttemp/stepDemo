@@ -28,7 +28,7 @@
             android:textSize="14dp" />
 
         <TextView
-            android:id="@+id/xiaolajiao_head_tv_title"
+            android:id="@+id/head_tv_title"
             android:layout_width="195dp"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
